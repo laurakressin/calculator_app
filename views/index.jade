@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form#mathForm
+    input(type='number', name='firstInput')
+    button(class='add') +
+    button(class='subtract') -
+    button(class='divide') /
+    button(class='multiply') *
+    input(type='number', name='secondInput')
+    button(type='submit') =
+
